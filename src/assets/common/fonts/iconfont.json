@@ -1,0 +1,37 @@
+{
+  "id": "2266501",
+  "name": "down",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6508281",
+      "name": "下  拉",
+      "font_class": "xiala",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "9887860",
+      "name": "下  拉",
+      "font_class": "xiala1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12872704",
+      "name": "下  拉",
+      "font_class": "to-prev",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "16313413",
+      "name": "下  拉",
+      "font_class": "link",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}

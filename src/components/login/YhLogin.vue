@@ -1,16 +1,16 @@
 <template>
   <div class="yh_login">
     <div class="login_box">
-      <img src="../../assets/image/login/header_icon.svg" class="avatar" alt="">
+      <img src="../../assets/image/login/header_icon1.svg" class="avatar" alt="">
       <h1>Login Here</h1>
       <form>
         <p>Username</p>
-        <input type="text" name="" placeholder="Enter Username">
+        <input type="text" name="" v-model="username" placeholder="Enter Username">
         <p>Password</p>
-        <input type="password" name="" placeholder="Enter Password">
-        <input type="submit" name="" value="Login">
-        <a href="#">Lost your password?</a> <br>
-        <a href="#">Don't have an account?</a>
+        <input type="password" name="" v-model="password" placeholder="Enter Password">
+        <input type="submit" name="" value="Login" @click="login">
+        <a @click="goToForgotPass">Lost your password?</a> <br>
+        <a @click="goToRegister">Don't have an account?</a>
       </form>
       <!--<h1>登录</h1>
       <form>
@@ -28,7 +28,26 @@
 
 <script>
   export default {
-    name: "Yh-Login"
+    name: "YhLogin",
+    data() {
+      return {
+        username: "",
+        password: ""
+      }
+    },
+    methods: {
+      goToForgotPass() {
+        console.log("forgotPass");
+        this.$router.push("/forgotPass")
+      },
+      goToRegister() {
+        console.log("register");
+        this.$router.push("/register")
+      },
+      login(username, password) {
+
+      }
+    }
   }
 </script>
 
@@ -37,8 +56,8 @@
     width: 100%;
     height: 100vh;
 
-    background-size: 100%;
-    background: url("../../assets/image/bg/bg1.jpg") center;
+    background-size: 100% 100%;
+    background: url("../../assets/image/bg/bg2.jpg") no-repeat fixed center;
     font-family: sans-serif;
   }
 
